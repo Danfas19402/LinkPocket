@@ -1,0 +1,258 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+min-height: 100vh;
+padding: 20px;
+}
+
+.container {
+max-width: 900px;
+margin: 0 auto;
+}
+
+header {
+text-align: center;
+color: white;
+padding: 30px 20px;
+margin-bottom: 30px;
+}
+
+header h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+header h1 i {
+color: #ffd700;
+}
+
+header p {
+font-size: 1.1rem;
+opacity: 0.9;
+}
+
+section {
+background: white;
+border-radius: 16px;
+padding: 25px;
+margin-bottom: 25px;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+color: #4a5568;
+margin-bottom: 20px;
+font-size: 1.4rem;
+border-bottom: 2px solid #e2e8f0;
+padding-bottom: 10px;
+}
+
+section h3 {
+color: #4a5568;
+margin-bottom: 15px;
+font-size: 1rem;
+}
+
+.input-group {
+margin-bottom: 18px;
+}
+
+.input-group label {
+display: block;
+margin-bottom: 6px;
+color: #2d3748;
+font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+width: 100%;
+padding: 12px 15px;
+border: 2px solid #e2e8f0;
+border-radius: 8px;
+font-size: 1rem;
+transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+outline: none;
+border-color: #667eea;
+}
+
+.btn-submit {
+width: 100%;
+padding: 14px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 1.1rem;
+font-weight: 600;
+cursor: pointer;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+
+.btn-submit:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.filter-buttons {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.filter-btn {
+padding: 8px 16px;
+background: #edf2f7;
+color: #4a5568;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transition: all 0.3s ease;
+font-weight: 500;
+}
+
+.filter-btn:hover {
+background: #e2e8f0;
+}
+
+.filter-btn.active {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+}
+
+.links-container {
+display: grid;
+gap: 15px;
+}
+
+.empty-state {
+text-align: center;
+padding: 40px 20px;
+color: #9ca3af;
+}
+
+.empty-state i {
+font-size: 3rem;
+margin-bottom: 15px;
+opacity: 0.5;
+}
+
+.link-card {
+background: #f7fafc;
+border-radius: 10px;
+padding: 18px;
+border-left: 4px solid #667eea;
+transition: all 0.3s ease;
+}
+
+.link-card:hover {
+background: #edf2f7;
+transform: translateX(5px);
+}
+
+.link-card.html { border-left-color: #e34c26; }
+.link-card.css { border-left-color: #264de4; }
+.link-card.JavaScript { border-left-color: #f7df1e; }
+.link-card.Outros { border-left-color: #6a5acd; }
+
+.link-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 8px;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.link-titulo {
+font-size: 1.1rem;
+font-weight: 600;
+color: #2d3748;
+}
+
+.link-categoria {
+font-size: 0.8rem;
+padding: 3px 10px;
+border-radius: 12px;
+font-weight: 600;
+}
+
+.link-categoria.HTML { background: #ffebe6; color: #e34c26; }
+.link-categoria.CSS { background: #e6ebff; color: #264de4; }
+.link-categoria.JavaScript { background: #fffde6; color: #ccaa00; }
+.link-categoria.Outros { background: #ede6ff; color: #6a5acd; }
+
+.link-url {
+color: #667eea;
+text-decoration: none;
+font-size: 0.9rem;
+word-break: break-all;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.link-url:hover {
+text-decoration: underline;
+}
+
+.link-acoes {
+display: flex;
+gap: 10px;
+}
+
+.btn-excluir {
+padding: 6px 12px;
+background: #fee2e2;
+color: #dc2626;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 0.85rem;
+transition: background 0.2s ease;
+}
+
+.btn-excluir:hover {
+background: #fecaca;
+}
+
+footer {
+text-align: center;
+color: white;
+padding: 20px;
+font-size: 0.9rem;
+opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+header h1 {
+font-size: 1.8rem;
+}
+section {
+padding: 18px;
+}
+.filter-buttons {
+justify-content: center;
+}
+.link-header {
+flex-direction: column;
+align-items: flex-start;
+}
+}
