@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkPocket - Meus Links</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+<header>
+<h1><i class="fas fa-bookmark"></i> LinkPocket</h1>
+<p>📌 Organizador de Links</p>
+<p>📝 Seus links organizados em um só lugar</p>
+</header>      
+
+<section class="form-section">
+<h2>Adicionar Novo Link</h2>
+<form id="linkForm">
+<div class="input-group">
+<label for="titulo">Título:</label>
+<input type="text" id="titulo" placeholder="Ex: Tutorial CSS" required>
+</div>
+
+<div class="input-group">
+<label for="url">URL / Link:</label>
+<input type="url" id="url" placeholder="https://exemplo.com" required>
+</div>
+
+<div class="input-group">
+<label for="categoria">Categoria:</label>
+<select id="categoria" required>
+<option value="">Selecione uma categoria</option>
+<option value="HTML">HTML</option>
+<option value="CSS">CSS</option>
+<option value="JavaScript">JavaScript</option>
+<option value="Outros">Outros</option>
+</select>
+</div>
+
+<button type="submit" class="btn-submit">
+<i class="fas fa-plus-circle"></i> Adicionar Link
+</button>
+</form>
+</section>
+
+<section class="filter-section">
+<h3>Filtrar por Categoria:</h3>
+<div class="filter-buttons">
+<button class="filter-btn active" data-filter="todos">Todos</button>
+<button class="filter-btn" data-filter="HTML">HTML</button>
+<button class="filter-btn" data-filter="CSS">CSS</button>
+<button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+<button class="filter-btn" data-filter="Outros">Outros</button>
+</div>
+</section>
+
+<section class="links-section">
+<h2>Meus Links</h2>
+<div id="listaLinks" class="links-container">
+<div class="empty-state">
+<i class="fas fa-folder-open"></i>
+<p>Nenhum link cadastrado ainda. Comece adicionando acima!</p>
+</div>
+</div>
+</section>
+</div>
+
+<footer>
+<p>&copy; 2026 LinkPocket — Organizador de Links</p>
+<p>&copy; 2026 Criado por - Daniel Fealsi</p>
+</footer>
+
+    <script src="script.js"></script></body>
+</html>
