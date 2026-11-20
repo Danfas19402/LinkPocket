@@ -11,12 +11,12 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "./ícone/ícone LinkPoket.png LinkPocket.png",
+      "src": "./Ícone/Ícone LinkPoket.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./ícone/ícone LinkPoket.png LinkPocket.png",
+      "src": "./Ícone/Ícone LinkPoket.png",
       "sizes": "512x512",
       "type": "image/png"
     }
