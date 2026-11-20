@@ -8,6 +8,7 @@
   "display": "standalone",
   "background_color": "#667eea",
   "theme_color": "#667eea",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "./Ícon LinkPocket - 1.png",
@@ -21,6 +22,9 @@
     }
   ]
 }
+
+
+
 
 
 
