@@ -1,4 +1,5 @@
 
+
 {
   "name": "LinkPocket",
   "short_name": "LinkPocket",
@@ -11,14 +12,15 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "./Ícone/Ícone LinkPocket.png",
+      "src": "./Ícone LinkPoket - 1.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./Ícone/Ícone LinkPocket.png",
+      "src": "./Ícone LinkPoket.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
 }
+
